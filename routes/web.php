@@ -14,6 +14,6 @@ use App\Http\Controllers\AccountController;
 |
 */
 
-Route::resource('/', AccountController::class);
 
+Route::get('/', [AccountController::class, 'index']);
 Route::resource('users', AccountController::class);
